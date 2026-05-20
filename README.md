@@ -6,8 +6,9 @@
 
 <p align="center">
   <strong>CURRENTLY WIP</strong><br>
-  <strong>DOES NOT CATCH ERRORS ON COMPILE !!</strong>
-  <strong>ima be for real this isnt going to be a top-level language but it will probably reach that tag in like 20 years or somthing.</strong><br><br>
+  <strong>DOES NOT CATCH ERRORS ON COMPILE !!</strong><br>
+  
+  <strong>ima be for real this isnt going to be a top-level language but it will probably reach that tag in like 20 years or somthing.</strong><br>
 </p>
 
 <p align="center">
