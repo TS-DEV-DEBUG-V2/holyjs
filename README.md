@@ -5,6 +5,11 @@
 <h1 align="center">HolyJS</h1>
 
 <p align="center">
+  <strong>CURRENTLY WIP</strong><br>
+  <strong>DOES NOT CATCH ERRORS ON COMPILE !!</strong><br>
+</p>
+
+<p align="center">
   <strong>JavaScript, but holier.</strong><br>
   A compiled language with cleaner syntax that transpiles to standard JavaScript.
 </p>
