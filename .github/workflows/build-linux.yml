@@ -1,0 +1,40 @@
+name: Build Linux
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch: [x64]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install g++
+        run: sudo apt-get update && sudo apt-get install -y g++
+
+      - name: Build HolyJS
+        run: g++ -std=c++17 -O2 -static -o holyjs-linux-x64 src/holyjs.cpp
+
+      - name: Test compiler
+        run: |
+          echo 'let name = "World"' > /tmp/test.hj
+          echo 'fn greet(who) {' >> /tmp/test.hj
+          echo '  ret "Hello, " + who + "!"' >> /tmp/test.hj
+          echo '}' >> /tmp/test.hj
+          echo 'log(greet(name))' >> /tmp/test.hj
+          ./holyjs-linux-x64 /tmp/test.hj -o /tmp/test.js
+          node /tmp/test.js | grep "Hello, World!"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: holyjs-linux-x64
+          path: holyjs-linux-x64
