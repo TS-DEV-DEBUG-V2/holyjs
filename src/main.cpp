@@ -2,9 +2,9 @@
 COPYRIGHT 2026 TS-DEV-DEBUG-V2
 HolyJS Compiler
 License: MIT 
-https://github.com/TS-DEV-DEBUG-V2/holyjs
+For more info visit https://github.com/TS-DEV-DEBUG-V2/holyjs
 */
-For more info visit 
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
