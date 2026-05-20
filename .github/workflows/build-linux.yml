@@ -21,7 +21,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y g++
 
       - name: Build HolyJS
-        run: g++ -std=c++17 -O2 -static -o holyjs-linux-x64 src/holyjs.cpp
+        run: g++ -std=c++17 -O2 -static -o holyjs-linux-x64 src/main.cpp
 
       - name: Test compiler
         run: |
