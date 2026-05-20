@@ -16,7 +16,7 @@ jobs:
 
       - name: Build HolyJS with g++ (MinGW)
         shell: bash
-        run: g++ -std=c++17 -O2 -static -o holyjs-windows-x64.exe src/holyjs.cpp
+        run: g++ -std=c++17 -O2 -static -o holyjs-windows-x64.exe src/main.cpp
 
       - name: Test compiler
         shell: bash
