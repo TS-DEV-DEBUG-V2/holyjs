@@ -1,0 +1,40 @@
+let name = "World"
+
+fn greet(who) {
+  ret "Hello, " + who + "!"
+}
+
+log(greet(name))
+
+for i in range(5) {
+  log(i)
+}
+
+let nums = [1, 2, 3]
+for n in nums {
+  log(n * 10)
+}
+
+struct Point {
+  x,
+  y,
+  fn toString() {
+    ret `(${this.x}, ${this.y})`
+  }
+}
+
+let p = new Point(10, 20)
+log(p.toString())
+
+if 5 == 5 {
+  log("five is five")
+}
+
+mut counter = 0
+while counter < 3 {
+  counter += 1
+}
+log(counter)
+
+let double = (x) => x * 2
+log(double(21))
