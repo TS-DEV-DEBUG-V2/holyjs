@@ -17,79 +17,53 @@
   <img src="https://img.shields.io/badge/language-C%2B%2B17-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++17" />
   <img src="https://img.shields.io/badge/target-JavaScript%20ES2020-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="Target JS" />
   <img src="https://img.shields.io/badge/status-stable-brightgreen?style=flat-square" alt="Status" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/compiler-single%20pass-blueviolet?style=flat-square" alt="Single Pass" />
   <img src="https://img.shields.io/badge/parser-recursive%20descent-purple?style=flat-square" alt="Parser" />
   <img src="https://img.shields.io/badge/expressions-pratt%20parsing-9B59B6?style=flat-square" alt="Pratt Parsing" />
   <img src="https://img.shields.io/badge/GC-FinalizationRegistry-orange?style=flat-square" alt="GC" />
   <img src="https://img.shields.io/badge/GC-WeakRef%20tracking-E67E22?style=flat-square" alt="WeakRef" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/modules-ES%20Modules-4FC08D?style=flat-square" alt="ES Modules" />
   <img src="https://img.shields.io/badge/modules-CommonJS-339933?style=flat-square&logo=node.js&logoColor=white" alt="CommonJS" />
   <img src="https://img.shields.io/badge/platform-linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
   <img src="https://img.shields.io/badge/platform-macOS-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS" />
   <img src="https://img.shields.io/badge/platform-windows-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Windows" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/no%20dependencies-none-success?style=flat-square" alt="No Deps" />
   <img src="https://img.shields.io/badge/single%20file-1309%20lines-informational?style=flat-square" alt="Single File" />
   <img src="https://img.shields.io/badge/build%20time-%3C2s-brightgreen?style=flat-square" alt="Build Time" />
   <img src="https://img.shields.io/badge/binary%20size-~120KB-blue?style=flat-square" alt="Binary Size" />
   <img src="https://img.shields.io/badge/file%20extension-.hj-red?style=flat-square" alt=".hj" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/feature-structs-1ABC9C?style=flat-square" alt="Structs" />
   <img src="https://img.shields.io/badge/feature-match%20expressions-16A085?style=flat-square" alt="Match" />
   <img src="https://img.shields.io/badge/feature-pipe%20operator-2ECC71?style=flat-square" alt="Pipe" />
   <img src="https://img.shields.io/badge/feature-range%20loops-27AE60?style=flat-square" alt="Range" />
   <img src="https://img.shields.io/badge/feature-arrow%20functions-3498DB?style=flat-square" alt="Arrows" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/feature-spread%20operator-2980B9?style=flat-square" alt="Spread" />
   <img src="https://img.shields.io/badge/feature-rest%20params-8E44AD?style=flat-square" alt="Rest" />
   <img src="https://img.shields.io/badge/feature-template%20strings-9B59B6?style=flat-square" alt="Templates" />
   <img src="https://img.shields.io/badge/feature-ternary-E74C3C?style=flat-square" alt="Ternary" />
   <img src="https://img.shields.io/badge/feature-object%20shorthand-C0392B?style=flat-square" alt="Shorthand" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/feature-nil%20literal-E67E22?style=flat-square" alt="Nil" />
   <img src="https://img.shields.io/badge/feature-exports-D35400?style=flat-square" alt="Exports" />
   <img src="https://img.shields.io/badge/feature-imports-F39C12?style=flat-square" alt="Imports" />
   <img src="https://img.shields.io/badge/feature-while%20loops-F1C40F?style=flat-square" alt="While" />
   <img src="https://img.shields.io/badge/runtime-Node.js-339933?style=flat-square&logo=node.js&logoColor=white" alt="Node.js" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/runtime-Bun-F9F1E1?style=flat-square&logo=bun&logoColor=black" alt="Bun" />
   <img src="https://img.shields.io/badge/runtime-Deno-000000?style=flat-square&logo=deno&logoColor=white" alt="Deno" />
   <img src="https://img.shields.io/badge/runtime-Browser-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="Browser" />
   <img src="https://img.shields.io/badge/build-g%2B%2B-A8B9CC?style=flat-square&logo=gnu&logoColor=white" alt="g++" />
   <img src="https://img.shields.io/badge/build-clang%2B%2B-262D3A?style=flat-square&logo=llvm&logoColor=white" alt="clang++" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/build-MSVC-5C2D91?style=flat-square&logo=visualstudio&logoColor=white" alt="MSVC" />
   <img src="https://img.shields.io/badge/build-CMake-064F8C?style=flat-square&logo=cmake&logoColor=white" alt="CMake" />
   <img src="https://img.shields.io/badge/output-ES2020%2B-F7DF1E?style=flat-square" alt="ES2020+" />
   <img src="https://img.shields.io/badge/npm-compatible-CB3837?style=flat-square&logo=npm&logoColor=white" alt="npm compatible" />
   <img src="https://img.shields.io/badge/zero-runtime%20deps-2ECC71?style=flat-square" alt="Zero Runtime Deps" />
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/transpiler-source%20to%20source-FF6F61?style=flat-square" alt="Transpiler" />
   <img src="https://img.shields.io/badge/semicolons-none-E74C3C?style=flat-square" alt="No Semicolons" />
   <img src="https://img.shields.io/badge/equality-always%20strict-1ABC9C?style=flat-square" alt="Strict Equality" />
   <img src="https://img.shields.io/badge/immutable-by%20default-3498DB?style=flat-square" alt="Immutable Default" />
   <img src="https://img.shields.io/badge/made%20with-love-E91E63?style=flat-square" alt="Made with Love" />
 </p>
+
 
 ---
 
