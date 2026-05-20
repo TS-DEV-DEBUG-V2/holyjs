@@ -68,7 +68,6 @@
   <img src="https://img.shields.io/badge/semicolons-none-E74C3C?style=flat-square" alt="No Semicolons" />
   <img src="https://img.shields.io/badge/equality-always%20strict-1ABC9C?style=flat-square" alt="Strict Equality" />
   <img src="https://img.shields.io/badge/immutable-by%20default-3498DB?style=flat-square" alt="Immutable Default" />
-  <img src="https://img.shields.io/badge/made%20with-love-E91E63?style=flat-square" alt="Made with Love" />
 </p>
 
 
