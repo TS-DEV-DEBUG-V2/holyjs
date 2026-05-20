@@ -153,7 +153,7 @@ The output is standard ES2020+ JavaScript. No runtime library needed (GC runtime
 
 ```bash
 # Build the compiler
-g++ -std=c++17 -O2 -o holyjs src/holyjs.cpp
+g++ -std=c++17 -O2 -o holyjs src/main.cpp
 
 # Write your first program
 echo 'log("Hello from HolyJS")' > hello.hj
@@ -177,13 +177,13 @@ HolyJS has zero dependencies. You need a C++17 compiler and nothing else.
 **With g++ (recommended):**
 
 ```bash
-g++ -std=c++17 -O2 -o holyjs src/holyjs.cpp
+g++ -std=c++17 -O2 -o holyjs src/main.cpp
 ```
 
 **With clang++:**
 
 ```bash
-clang++ -std=c++17 -O2 -o holyjs src/holyjs.cpp
+clang++ -std=c++17 -O2 -o holyjs src/main.cpp
 ```
 
 **With CMake:**
@@ -197,7 +197,7 @@ make -j$(nproc)
 **With MSVC on Windows:**
 
 ```bash
-cl /std:c++17 /O2 /Fe:holyjs.exe src\holyjs.cpp
+cl /std:c++17 /O2 /Fe:holyjs.exe src\mai.cpp
 ```
 
 The resulting binary is fully self-contained. Copy it anywhere on your system or add it to your PATH.
@@ -1357,7 +1357,7 @@ This prints the full AST tree, showing how the parser interpreted your code.
 ```
 holyjs/
   src/
-    holyjs.cpp          # Complete compiler (lexer + parser + codegen)
+    main.cpp          # Complete compiler (lexer + parser + codegen)
   examples/
     demo.hj             # Full feature demonstration
     test.hj             # Minimal runnable test
