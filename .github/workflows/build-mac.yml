@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build HolyJS (arm64)
-        run: clang++ -std=c++17 -O2 -o holyjs-macos-arm64 src/holyjs.cpp
+        run: clang++ -std=c++17 -O2 -o holyjs-macos-arm64 src/main.cpp
 
       - name: Test compiler
         run: |
