@@ -1,0 +1,59 @@
+name: Build macOS
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-macos-arm64:
+    runs-on: macos-14
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build HolyJS (arm64)
+        run: clang++ -std=c++17 -O2 -o holyjs-macos-arm64 src/holyjs.cpp
+
+      - name: Test compiler
+        run: |
+          echo 'let name = "World"' > /tmp/test.hj
+          echo 'fn greet(who) {' >> /tmp/test.hj
+          echo '  ret "Hello, " + who + "!"' >> /tmp/test.hj
+          echo '}' >> /tmp/test.hj
+          echo 'log(greet(name))' >> /tmp/test.hj
+          ./holyjs-macos-arm64 /tmp/test.hj -o /tmp/test.js
+          node /tmp/test.js | grep "Hello, World!"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: holyjs-macos-arm64
+          path: holyjs-macos-arm64
+
+  build-macos-x64:
+    runs-on: macos-13
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build HolyJS (x64)
+        run: clang++ -std=c++17 -O2 -o holyjs-macos-x64 src/holyjs.cpp
+
+      - name: Test compiler
+        run: |
+          echo 'let name = "World"' > /tmp/test.hj
+          echo 'fn greet(who) {' >> /tmp/test.hj
+          echo '  ret "Hello, " + who + "!"' >> /tmp/test.hj
+          echo '}' >> /tmp/test.hj
+          echo 'log(greet(name))' >> /tmp/test.hj
+          ./holyjs-macos-x64 /tmp/test.hj -o /tmp/test.js
+          node /tmp/test.js | grep "Hello, World!"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: holyjs-macos-x64
+          path: holyjs-macos-x64
