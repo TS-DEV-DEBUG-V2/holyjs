@@ -1,0 +1,140 @@
+// holly js example
+// yea bro this sucks i know 
+
+import { readFileSync } from "fs"
+import express from "express"
+
+// Variables: let = const, mut = let
+let name = "HolyJS"
+mut counter = 0
+
+// Functions with fn keyword, return with ret
+fn greet(person) {
+  ret "Hello, " + person + "!"
+}
+
+// Structs compile to classes with auto-constructor + GC tracking
+struct Player {
+  fn takeDamage(amount) {
+    this.hp = this.hp - amount
+    if this.hp < 0 {
+      this.hp = 0
+    }
+  }
+
+  fn isAlive() {
+    ret this.hp > 0
+  }
+}
+
+// new keyword, GC-tracked allocation
+let p = new Player("Steve", 100)
+p.takeDamage(30)
+log(p.hp)
+log(p.isAlive())
+
+// log() compiles to console.log()
+log(greet(name))
+
+// == compiles to ===, no parens needed on if/for
+if counter == 0 {
+  log("counter is zero")
+}
+
+// for..in range() compiles to C-style for loop
+for i in range(5) {
+  log(i)
+  counter += 1
+}
+
+// for..in with iterables
+let fruits = ["apple", "banana", "cherry"]
+for fruit in fruits {
+  log(fruit)
+}
+
+// Range operator
+for i in 0..10 {
+  log(i)
+}
+
+// While loops
+mut x = 10
+while x > 0 {
+  x -= 1
+}
+
+// Lambdas / arrow functions
+let double = (n) => n * 2
+let nums = [1, 2, 3, 4, 5]
+let doubled = nums.map((n) => n * 2)
+let sum = nums.reduce((a, b) => a + b, 0)
+
+// Pipe operator
+let result = 5 |> double
+log(result)
+
+// Match expressions (compile to IIFE switch)
+let status = "active"
+let msg = match status {
+  "active" => "User is active",
+  "banned" => "User is banned",
+  _ => "Unknown status"
+}
+log(msg)
+
+// Template strings
+let greeting = `hello ${name}, you have ${counter} points`
+log(greeting)
+
+// Objects with shorthand
+let age = 25
+let user = { name, age, role: "admin" }
+log(user)
+
+// Spread operator
+let defaults = { theme: "dark", lang: "en" }
+let config = { ...defaults, lang: "fr" }
+
+// Nested functions
+fn makeCounter() {
+  mut count = 0
+  ret {
+    inc: () => {
+      count += 1
+      ret count
+    },
+    get: () => count
+  }
+}
+
+let c = makeCounter()
+c.inc()
+c.inc()
+log(c.get())
+
+// Export
+export fn add(a, b) {
+  ret a + b
+}
+
+// Nil
+let nothing = nil
+if nothing == nil {
+  log("it's nil")
+}
+
+// Boolean literals
+let alive = true
+let dead = false
+
+// Rest params
+fn sum2(...nums) {
+  ret nums.reduce((a, b) => a + b, 0)
+}
+
+// Ternary
+let val = alive ? "yes" : "no"
+
+// Use (require-style import for CommonJS)
+use "lodash" as _
