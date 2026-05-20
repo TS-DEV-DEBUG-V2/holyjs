@@ -1,0 +1,36 @@
+name: Build Windows
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build HolyJS with g++ (MinGW)
+        shell: bash
+        run: g++ -std=c++17 -O2 -static -o holyjs-windows-x64.exe src/holyjs.cpp
+
+      - name: Test compiler
+        shell: bash
+        run: |
+          echo 'let name = "World"' > test.hj
+          echo 'fn greet(who) {' >> test.hj
+          echo '  ret "Hello, " + who + "!"' >> test.hj
+          echo '}' >> test.hj
+          echo 'log(greet(name))' >> test.hj
+          ./holyjs-windows-x64.exe test.hj -o test.js
+          node test.js | grep "Hello, World!"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: holyjs-windows-x64
+          path: holyjs-windows-x64.exe
