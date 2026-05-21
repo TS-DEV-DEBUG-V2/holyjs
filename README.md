@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <strong>JavaScript, but holier.</strong><br>
+  <strong>This language was inspired by Terry A. Davis's HolyC language.</strong><br>
   A compiled language with cleaner syntax that transpiles to standard JavaScript.
 </p>
 
